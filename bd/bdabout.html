@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Blood Donation App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: linear-gradient(90deg, #c31432, #240b36);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffe600;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://img.freepik.com/free-photo/doctor-holding-red-heart-with-stethoscope_1150-19023.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      text-align: center;
+    }
+
+    /* Mission Section */
+    .section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #c31432;
+      margin-bottom: 15px;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Why Donate Cards */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 250px;
+      max-width: 320px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      color: #c31432;
+      margin-bottom: 12px;
+    }
+
+    /* Team Section */
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .team-member {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .team-member:hover {
+      transform: scale(1.05);
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .team-member h4 {
+      margin: 10px 0 5px;
+      color: #240b36;
+    }
+    .team-member p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background: #240b36;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><a href="index.html"><b>Donate Blood</b></a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="bdabout.html">About Us</a>
+      <a href="find-drive.html">Find a Drive</a>
+      <a href="bdcontact.html">Contact</a>
+      <a href="bdlogin.html">Login</a>
+      <a href="bdregister.html">Register</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About Our Mission</h1>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section">
+    <h2>Our Mission</h2>
+    <p>
+      Our Blood Donation App connects donors with recipients in need.  
+      We aim to make blood donation quick, accessible, and impactful.  
+      By donating blood, you can help save up to three lives and make  
+      a real difference in your community.
+    </p>
+  </section>
+
+  <!-- Why Donate Section -->
+  <section class="section">
+    <h2>Why Donate Blood?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Save Lives</h3>
+        <p>Every donation helps save patients in emergencies, surgeries, and chronic illnesses.</p>
+      </div>
+      <div class="card">
+        <h3>Health Benefits</h3>
+        <p>Regular donations improve heart health and reduce harmful iron levels in the body.</p>
+      </div>
+      <div class="card">
+        <h3>Community Impact</h3>
+        <p>Join a network of life-savers and contribute to your community’s well-being.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
+        <h4>Rohit Sharma</h4>
+        <p>Founder & Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member">
+        <h4>Priya Verma</h4>
+        <p>Project Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Team Member">
+        <h4>Arjun Mehta</h4>
+        <p>UI/UX Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Blood Donation App | Made with ❤️ to Save Lives</p>
+  </footer>
+
+</body>
+</html>
